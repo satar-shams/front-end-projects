@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page template flex</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/qr.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header" id="header">
+        </header>
+        <script src="../js/header.js"></script>
+
+        <main class="main">
+            <div class="content">
+                <div class="qr">
+                    <h3>QR Generator</h3>
+                    <form action="">
+                        <input type="text" id="input" placeholder="Enter url">
+                        <button type="submit" onclick="submitButton(event)">Generate QR Code</button>
+                    </form>
+                    <img src="" alt="" id="qr-img">
+                </div>
+            </div>
+        </main>
+
+        <!-- JavaScript codes -->
+        <script>
+            function submitButton(event) {
+                event.preventDefault();
+                urlStr = document.getElementById('input').value;
+                getQr(150, 150, urlStr);
+            }
+
+            function getQr(x, y, url) {
+                str = "https://api.qrserver.com/v1/create-qr-code/?size=" + x + "x" + y + "&data=" + url;
+                document.getElementById("qr-img").src = str;
+            }
+        </script>
+
+        <footer class="footer">
+            <i class="fa fa-copyright"></i> 2022 All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>

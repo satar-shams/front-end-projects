@@ -1,0 +1,73 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    width: 34rem;
+    height: 34rem;
+    border: 0.3rem #203040 solid;
+    margin: 1rem;
+    border-radius: 6px;
+}
+
+.title {
+    text-align: center;
+    border-bottom: 0.1rem #666 solid;
+    margin-bottom: 1rem;
+}
+
+.add-task {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.add-task button {
+    background-color: royalblue;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+}
+
+.text1 {
+    border-radius: 3px;
+    width: 23rem;
+    border-color: royalblue;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    background-color: lightblue;
+    border-radius: 3px;
+}
+
+.task button {
+    background-color: blue;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+}
+
+.task-left {
+    display: flex;
+}
+
+.text {
+    width: 20rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.line-through {
+    text-decoration: line-through;
+}

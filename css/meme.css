@@ -1,0 +1,32 @@
+#canv {
+    /* background-color: royalblue; */
+    margin: 1rem;
+    border: 0.1rem solid black;
+    padding: 0;
+}
+
+.meme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34rem;
+    height: auto;
+    border: 0.3rem #203040 solid;
+    margin: 1rem;
+    border-radius: 6px;
+    background-color: antiquewhite;
+}
+
+.imageUpload {
+    /* border-bottom: 0.1rem solid gray; */
+    margin-bottom: 1rem;
+}
+
+.position {
+    padding: 1rem;
+}
+
+.text {
+    margin-top: 0.3rem;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page template flex</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header" id="header">
+        </header>
+        <script src="../js/header.js"></script>
+
+        <main class="main">
+            <div class="content">
+                <button class="quiz-start" onclick="start(this)" id="start">Start Quiz</button>
+                <div class="hide quiz" id="quiz">
+                    <h1 class="project-header">Quiz Project</h1>
+                    <div class="step" id="steps">
+                        <!-- after starting quiz these elements will be removed, totally we can comment them -->
+                        <div class="question" id="question">Some Questions</div>
+                        <!-- <div onclick="valid(this, false)" class="answer" id="answer1">Answer1</div>
+                        <div onclick="valid(this, false)" class="answer" id="answer2">Answer2</div>
+                        <div onclick="valid(this, false)" class="answer" id="answer3">Answer3</div>
+                        <div onclick="valid(this, true)" class="answer" id="answer4">Answer4</div> -->
+                    </div>
+                    <!-- this must be seprated -->
+                    <button onclick="nextStep()" class="next hide" id="next">Next Question</button>
+                    <button onclick="startAgain()" class="again hide" id="again">Try Again</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <i class="fa fa-copyright"></i> 2022 All rights reserved.
+        </footer>
+    </div>
+    <script src="../js/quiz.js"></script>
+</body>
+
+</html>

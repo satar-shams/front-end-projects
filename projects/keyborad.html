@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page template flex</title>
+    <!-- add general css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- add keyboard css -->
+    <link rel="stylesheet" href="../css/keyboard.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header" id="header">
+        </header>
+        <!-- add navbar by JS HTML DOM -->
+        <script src="../js/header.js"></script>
+
+        <main class="main">
+            <div class="content">
+                <div class="container">
+                    <h1 class="title"><label for="text">Key Board</label></h1>
+                    <ol class="description">
+                        <li>JS HTML DOM and CSS </li>
+                        <li>Responsive Project</li>
+                    </ol>
+
+                    <textarea class="text" id="text" name="text" rows="5" cols="75"></textarea>
+
+                    <hr>
+                    <div class="keyboard" id="board">
+                        <!-- <div class="div1">
+                                <button class="keys" value="1" onclick="addChar(this.value)">1</button>
+                                <button class="keys" value="2" onclick="addChar(this.value)">2</button>
+                                <button class="keys" value="3" onclick="addChar(this.value)">3</button>
+                                <button class="keys" value="4" onclick="addChar(this.value)">4</button>
+                                <button class="keys" value="5" onclick="addChar(this.value)">5</button>
+                                <button class="keys" value="6" onclick="addChar(this.value)">6</button>
+                                <button class="keys" value="7" onclick="addChar(this.value)">7</button>
+                                <button class="keys" value="8" onclick="addChar(this.value)">8</button>
+                                <button class="keys" value="9" onclick="addChar(this.value)">9</button>
+                                <button class="keys" value="0" onclick="addChar(this.value)">0</button>
+                            </div>
+                            <div class="div2">
+                                <button class="keys" value="q" onclick="addChar(this.value)">q</button>
+                                <button class="keys" value="w" onclick="addChar(this.value)">w</button>
+                                <button class="keys" value="e" onclick="addChar(this.value)">e</button>
+                                <button class="keys" value="r" onclick="addChar(this.value)">r</button>
+                                <button class="keys" value="t" onclick="addChar(this.value)">t</button>
+                                <button class="keys" value="y" onclick="addChar(this.value)">y</button>
+                                <button class="keys" value="u" onclick="addChar(this.value)">u</button>
+                                <button class="keys" value="i" onclick="addChar(this.value)">i</button>
+                                <button class="keys" value="o" onclick="addChar(this.value)">o</button>
+                                <button class="keys" value="p" onclick="addChar(this.value)">p</button>
+                                <button class="func" value="" onclick="removeChar()">del</button>
+                            </div>
+                            <div class="div4">
+                                <button class="func" value="" onclick="caps()" id="caps">caps</button>
+                                <button class="keys" value="a" onclick="addChar(this.value)">a</button>
+                                <button class="keys" value="s" onclick="addChar(this.value)">s</button>
+                                <button class="keys" value="d" onclick="addChar(this.value)">d</button>
+                                <button class="keys" value="f" onclick="addChar(this.value)">f</button>
+                                <button class="keys" value="g" onclick="addChar(this.value)">g</button>
+                                <button class="keys" value="h" onclick="addChar(this.value)">h</button>
+                                <button class="keys" value="j" onclick="addChar(this.value)">j</button>
+                                <button class="keys" value="k" onclick="addChar(this.value)">k</button>
+                                <button class="keys" value="l" onclick="addChar(this.value)">l</button>
+                                <button class="func" value="" onclick="enter()">Enter</button>        
+                            </div>
+                            <div class="div3">
+                                <button class="func" value="" onclick="shift()" id="shift">shift</button>
+                                <button class="keys" value="z" onclick="addChar(this.value)">z</button>
+                                <button class="keys" value="x" onclick="addChar(this.value)">x</button>
+                                <button class="keys" value="c" onclick="addChar(this.value)">c</button>
+                                <button class="keys" value="v" onclick="addChar(this.value)">v</button>
+                                <button class="keys" value="b" onclick="addChar(this.value)">b</button>
+                                <button class="keys" value="n" onclick="addChar(this.value)">n</button>
+                                <button class="keys" value="m" onclick="addChar(this.value)">m</button>
+                                <button class="keys" value="," onclick="addChar(this.value)">,</button>
+                                <button class="keys" value="." onclick="addChar(this.value)">.</button>
+                                <button class="keys" value="?" onclick="addChar(this.value)">?</button>
+                            </div> -->
+
+                        <div class="div4" id="space">
+                            <button class="space" value=" " onclick="addChar(this.value)"></button>
+                        </div>
+                    </div>
+
+                    <!-- add keyboard by JS HTML DOM -->
+                    <script src="../js/keyboard.js"></script>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <i class="fa fa-copyright"></i> 2022 All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page template flex</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/todo.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header" id="header">
+        </header>
+        <script src="../js/header.js"></script>
+
+        <main class="main">
+            <div class="content">
+                <div class="todo">
+                    <h1 class="title">Todo List, JS</h1>
+
+                    <div class="add-task">
+                        <input class="text1" type="text" id="add" name="new task">
+                        <button onclick="addTaskFrom(document.getElementById('add').value)">Add task</button>
+                    </div>
+                    <div class="tasks" id="tasks">
+                        <!-- <div class="task" id="task1">
+                            <div class="task-left">
+                                <input type="checkbox" id="checkbox1" onclick="changeCheck(1)">
+
+                                <div class="text" id="text1">some thing to do</div>
+
+                            </div>
+                            <div class="task-right">
+                                <button onclick="removeDiv(1)">remove</button>
+                            </div>
+                        </div> -->
+                        <!-- <div class="task" id="task2">
+                            <div class="task-left">
+                                <input type="checkbox" id="checkbox2" onclick="changeCheck(2)">
+                                <input class="text" type="text" id="text2" value="some thing to do 2" disabled>
+                            </div>
+                            <div class="task-right">
+                                <button onclick="removeDiv(2)">remove</button>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <script src="../js/todo.js"></script>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <i class="fa fa-copyright"></i> 2022 All rights reserved.
+        </footer>
+    </div>
+
+</body>
+
+</html>

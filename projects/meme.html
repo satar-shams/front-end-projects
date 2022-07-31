@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page template flex</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/meme.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header" id="header">
+        </header>
+        <script src="../js/header.js"></script>
+
+        <main class="main">
+            <div class="content">
+
+                <div class="meme">
+
+                    <br>
+                    <div class="position">
+                        <label for="position"> Choose Text Position : </label>
+                        <select name="position" id="position">
+                        <option value="top">top</option>
+                        <option value="down">down</option>
+                        <option value="left">left</option>
+                        <option value="right">right</option>
+                        <option value="center">center</option>
+                    </select>
+                    </div>
+
+                    <div class="text">
+                        <input id="txt" class="txt" type="text">
+                        <button onclick="addText()">Add text</button>
+                    </div>
+
+                    <div class="canvas">
+                        <canvas id="canv" width="250" height="250">Your brower doesnot support canvas</canvas>
+                    </div>
+
+                    <input onchange="loadFile(event)" type="file" id="imageUpload" class="imageUpload" name="image" accept="image/*">
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <i class="fa fa-copyright"></i> 2022 All rights reserved.
+        </footer>
+    </div>
+    <script src="../js/meme.js"></script>
+</body>
+
+</html>

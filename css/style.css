@@ -1,0 +1,73 @@
+html {
+    font-size: 62.5%;
+    /* 16px * 62.5% = 1rem */
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.6rem Helvetica;
+    height: 100vh;
+    /* this and  height: 100%; in container */
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    /* 1 column */
+    grid-template-rows: 5rem 1fr 5rem;
+    /* 3 rows */
+    height: 100%;
+}
+
+.header {
+    grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* makes links at the middle  */
+    padding: 0.5rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a:hover {
+    /* color: crimson; */
+    color: #ff8000;
+    transition: all 0.5s ease;
+}
+
+.header-left a {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-right a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
